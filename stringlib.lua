@@ -60,3 +60,10 @@ getmetatable('').__index = function(str,key)
     return oldstr[key]
   end
 end
+
+getmetatable('').__call = function(self,...)
+  local args = {...}
+  if type(args[1]) == "number" and type(args[2]) == "number" then
+    return self:sub(args[1],args[2])
+  end
+end
