@@ -56,10 +56,19 @@ end
 local oldstr = string
 local index = getrawmetatable('').__index
 setreadonly(index, false)
-index = function(str,key)
+index = newcclosure(function(str,key)
   if type(key) == "number" then
     return oldstr.sub(str,key,key)
   else
     return oldstr[key]
   end
-end
+end)
+
+local call = getrawmetatable('').__call
+setreadonly(call,false)
+call = newcclosure(function(self,...)
+  local args = {...}
+  if type(args[1]) == "number" and type(args[2]) == "number" then
+    return self:sub(args[1],args[2])
+  end
+end)
