@@ -32,3 +32,5 @@ To learn how to use each function, please read the [Wiki](https://github.com/gre
 ## Added Features
 
 `string[idx]` - String indexing
+
+`string(a,b)` - String slicing
