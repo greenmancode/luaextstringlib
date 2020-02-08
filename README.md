@@ -8,7 +8,7 @@ To use the library, you just have to use any function to execute the script and 
 require("stringlib")
 ```
 
-To learn how to use each function, please read the [Wiki](#).
+To learn how to use each function, please read the [Wiki](https://github.com/greenmancode/luaextstringlib/wiki).
 
 ## Added Functions
 `string.charCodeAt`
