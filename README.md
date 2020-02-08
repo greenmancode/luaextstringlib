@@ -1,5 +1,5 @@
 # Lua Extended String Library
-A module that adds many useful functions to Lua's string library and string indexing.
+A module that adds many useful functions to Lua's string library, string indexing, and string slicing.
 
 ## Usage
 
