@@ -31,6 +31,8 @@ string.indexOf = function(self,p,s)
   return idx or -1
 end
 
+-- currently broken
+--[[
 string.lastIndexOf = function(self,p,s)
   for i=s or #self, 1, -1 do
     if self:find(p,i) ~= nil then
@@ -38,6 +40,7 @@ string.lastIndexOf = function(self,p,s)
     end
   end
 end
+]]--
 
 string.startsWith = function(self,p)
   return self:gmatch("^"..p)() ~= nil
