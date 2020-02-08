@@ -2,6 +2,8 @@
 -- This version is made for Roblox exploits
 -- Written by Greenman
 
+setreadonly(string,false)
+
 string.charCodeAt = function(self,idx)
   return self:byte(idx,idx)
 end
@@ -64,9 +66,7 @@ index = newcclosure(function(str,key)
   end
 end)
 
-local call = getrawmetatable('').__call
-setreadonly(call,false)
-call = newcclosure(function(self,...)
+getrawmetatable('').__call = newcclosure(function(self,...)
   local args = {...}
   if type(args[1]) == "number" and type(args[2]) == "number" then
     return self:sub(args[1],args[2])
