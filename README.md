@@ -23,7 +23,7 @@ To learn how to use each function, please read the [Wiki](https://github.com/gre
 
 `string.indexOf`
 
-`string.lastIndexOf`
+~~`string.lastIndexOf`~~ <-- Broken for now
 
 `string.startsWith`
 
