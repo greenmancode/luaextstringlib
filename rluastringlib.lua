@@ -1,5 +1,6 @@
 -- Lua Extended String Library (Roblox Lua edition)
 -- This version is made for Roblox exploits
+-- Requirements: getrawmetatable, setreadonly, newcclosure
 -- Written by Greenman
 
 setreadonly(string,false)
